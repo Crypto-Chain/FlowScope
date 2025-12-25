@@ -122,16 +122,24 @@ body {
 }
 
 .brand-logo {
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   border-radius: 30%;
-  background: radial-gradient(circle at 30% 0, var(--accent-strong), #38bdf8);
+  overflow: hidden; /* logo blijft binnen de cirkel */
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  font-size: 0.9rem;
+  background: radial-gradient(circle at 30% 0, var(--accent-strong), #38bdf8);
   box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.5), var(--shadow-soft);
+  flex-shrink: 0; /* duwt de menu-items niet weg */
+}
+
+/* nieuw toevoegen onder de .brand-logo */
+.brand-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .brand-text {
