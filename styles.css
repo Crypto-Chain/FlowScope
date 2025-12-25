@@ -1,5 +1,4 @@
-/* FlowScope Landing v1.0
-   Dark DEX / Solana style, compact cards, Free vs PRO focus */
+/* FlowScope Landing v1.0 + polished text & compare cards */
 
 :root {
   --bg: #020617;
@@ -8,10 +7,10 @@
   --card-soft: #071123;
   --border: rgba(148, 163, 184, 0.28);
 
-  --accent: #3b82f6;          /* blue */
+  --accent: #3b82f6;
   --accent-soft: rgba(59, 130, 246, 0.16);
   --accent-strong: rgba(59, 130, 246, 0.95);
-  --accent-secondary: #0ea5e9; /* cyan */
+  --accent-secondary: #0ea5e9;
 
   --text: #f9fafb;
   --text-soft: #e5e7eb;
@@ -774,6 +773,8 @@ body {
   margin-top: auto;
 }
 
+/* Comparison cards onder de plannen */
+
 .pricing-compare {
   margin-top: 26px;
   margin-bottom: 10px;
@@ -833,11 +834,10 @@ body {
   opacity: 0.96;
 }
 
-/* Responsive voor het stripje */
-@media (max-width: 768px) {
-  .pricing-compare {
-    grid-template-columns: minmax(0, 1fr);
-  }
+.pricing-footnote {
+  margin-top: 10px;
+  font-size: 0.76rem;
+  color: var(--muted);
 }
 
 /* ================= Features ================= */
@@ -963,7 +963,7 @@ body {
   }
 
   .plan-pro {
-    order: -1; /* PRO bovenaan op mobiel */
+    order: -1;
   }
 
   .features-grid,
@@ -988,29 +988,25 @@ body {
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
-    flex-direction: row;
-    gap: 16px;
-    background: rgba(2, 6, 23, 0.98);
-    padding: 10px 16px;
-    border-radius: 999px;
-    border: 1px solid rgba(148, 163, 184, 0.5);
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75);
-    z-index: 40;
-  }
-
-  .nav-actions.open {
-    position: absolute;
-    top: 106px;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
     background: rgba(2, 6, 23, 0.98);
     padding: 10px 16px;
-    border-radius: 999px;
+    border-radius: 18px;
     border: 1px solid rgba(148, 163, 184, 0.5);
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75);
     z-index: 40;
+    width: min(320px, 92vw);
+  }
+
+  .nav-actions.open {
+    position: static;
+    transform: none;
+    margin-top: 8px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
   }
 
   .nav-toggle {
@@ -1030,10 +1026,6 @@ body {
   .pricing-compare {
     grid-template-columns: minmax(0, 1fr);
   }
-
-  .pricing-compare-item {
-    grid-template-columns: minmax(0, 1fr);
-  }
 }
 
 @media (max-width: 520px) {
@@ -1043,11 +1035,6 @@ body {
 
   .hero h1 {
     font-size: 2.1rem;
-  }
-
-  .hero-meta {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .hero-card {

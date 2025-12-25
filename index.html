@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="FlowScope scans fresh DEX tokens on Solana, filters out trash, and formats the stream into clean Free & PRO crypto signals on Telegram."
+    content="FlowScope scans fresh tokens on Solana DEXs, filters out junk, and formats the on-chain stream into clean Free & PRO crypto signals on Telegram."
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -30,8 +30,24 @@
       </nav>
 
       <div class="nav-actions">
-        <a href="#pricing" class="btn btn-ghost">Join Free</a>
-        <a href="#pricing" class="btn btn-primary">Upgrade to PRO</a>
+        <!-- NAV: Free button → free channel -->
+        <a
+          href="https://t.me/flowscope_alerts"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-ghost"
+        >
+          Join Free
+        </a>
+        <!-- NAV: PRO button → bot -->
+        <a
+          href="https://t.me/FlowScopeAlertsBot"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+        >
+          Upgrade to PRO
+        </a>
       </div>
 
       <button class="nav-toggle" aria-label="Toggle navigation">
@@ -46,24 +62,33 @@
       <div class="container hero-grid">
         <!-- Hero left -->
         <div class="hero-copy">
-          <p class="eyebrow">24/7 DEX Scanner · Solana focused</p>
+          <p class="eyebrow">24/7 DEX scanner · Solana focused</p>
           <h1>
             Catch DEX moves
             <span class="accent">before they trend.</span>
           </h1>
           <p class="hero-subtitle">
             FlowScope tracks fresh Solana tokens, volume spikes, liquidity and order flow – so you don’t
-            have to stare at DexScreener all day.
+            have to sit in DexScreener tabs all day.
           </p>
 
           <ul class="hero-list">
-            <li>🎯 Clean Free &amp; PRO signals on Telegram</li>
+            <li>🎯 Clean Free &amp; PRO alerts on Telegram</li>
             <li>📊 Volume, liquidity, buy pressure &amp; more</li>
             <li>🧠 Smart scoring so you can filter noise fast</li>
           </ul>
 
           <div class="hero-cta">
-            <a href="#pricing" class="btn btn-primary">Open Telegram</a>
+            <!-- HERO main CTA → bot -->
+            <a
+              href="https://t.me/FlowScopeAlertsBot"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              Open Telegram
+            </a>
+            <!-- Secondary CTA blijft naar pricing -->
             <a href="#pricing" class="btn btn-secondary">See Free vs PRO</a>
           </div>
 
@@ -93,11 +118,11 @@
                   <span class="alert-badge pro">PRO</span>
                 </div>
                 <p class="alert-meta">
-                  Score: <strong>88/100</strong> · 1h Vol: $142k · Buy pressure: 71%
+                  Score: <strong>88/100</strong> · 1h vol: $142k · Buy pressure: 71%
                 </p>
               </div>
               <div class="alert-side">
-                <span class="alert-score">High</span>
+                <span class="alert-score">Strong</span>
                 <span class="alert-time">1h ago</span>
               </div>
             </article>
@@ -109,11 +134,11 @@
                   <span class="alert-badge free">FREE</span>
                 </div>
                 <p class="alert-meta">
-                  Score: <strong>76/100</strong> · 1h Vol: $58k · Buy pressure: 64%
+                  Score: <strong>76/100</strong> · 1h vol: $58k · Buy pressure: 64%
                 </p>
               </div>
               <div class="alert-side">
-                <span class="alert-score">Medium</span>
+                <span class="alert-score">Solid</span>
                 <span class="alert-time">1h ago</span>
               </div>
             </article>
@@ -130,13 +155,13 @@
               </div>
               <div class="alert-side">
                 <span class="alert-score">Blocked</span>
-                <span class="alert-time">—</span>
+                <span class="alert-time">–</span>
               </div>
             </article>
           </div>
 
           <p class="hero-card-footnote">
-            Example data. FlowScope never guarantees profit and is not financial advice.
+            Example data. FlowScope never guarantees profits and is not financial advice.
           </p>
         </div>
       </div>
@@ -149,8 +174,8 @@
           <p class="section-eyebrow">How FlowScope works</p>
           <h2>From DexScreener noise to clean signals</h2>
           <p>
-            FlowScope scans fresh Solana pairs 24/7, filters out trash, and turns the loud
-            on-chain feed into a small set of actionable signals.
+            FlowScope scans fresh Solana pairs 24/7, filters out junk, and turns the loud on-chain feed
+            into a small set of actionable alerts.
           </p>
         </header>
 
@@ -160,13 +185,12 @@
               <div class="step-icon">1</div>
               <h3>Scan &amp; collect</h3>
               <p>
-                FlowScope pulls live data from DexScreener’s token feeds and focuses on fresh
-                Solana pairs only.
+                FlowScope pulls live data from DexScreener’s token feeds and focuses on fresh Solana pairs only.
               </p>
               <ul>
-                <li>New pairs &amp; trending boosts</li>
-                <li>Solana-first focus for now</li>
-                <li>Volume &amp; liquidity snapshots</li>
+                <li>New pairs and trending boosts</li>
+                <li>Solana-only focus for now</li>
+                <li>Volume and liquidity snapshots</li>
               </ul>
             </article>
 
@@ -174,11 +198,11 @@
               <div class="step-icon">2</div>
               <h3>Filter &amp; score</h3>
               <p>
-                Each pair gets a FlowScope score based on volume spikes, liquidity and buy
-                pressure – junk gets filtered out.
+                Each pair gets a FlowScope score based on volume expansion, liquidity and buy pressure.
+                Weak setups get filtered out.
               </p>
               <ul>
-                <li>Volume vs 24h average</li>
+                <li>Volume spikes vs 24h average</li>
                 <li>Liquidity floor checks</li>
                 <li>Buy / sell pressure balance</li>
               </ul>
@@ -186,15 +210,15 @@
 
             <article class="step-card">
               <div class="step-icon">3</div>
-              <h3>Send Free &amp; PRO signals</h3>
+              <h3>Send Free &amp; PRO alerts</h3>
               <p>
                 Only the best candidates make it into your Telegram feeds: lighter Free alerts
-                plus deeper PRO breakdowns.
+                and deeper PRO breakdowns.
               </p>
               <ul>
                 <li>Free: quick stats + chart link</li>
-                <li>PRO: full breakdown &amp; context</li>
-                <li>Cool-downs to avoid spam repeats</li>
+                <li>PRO: full breakdown and context</li>
+                <li>Cooldowns to avoid spam repeats</li>
               </ul>
             </article>
           </div>
@@ -203,7 +227,7 @@
             <h3>What you actually get</h3>
             <p class="how-aside-intro">
               No dashboards, no terminal. Just Telegram messages that tell you what moved,
-              why it’s interesting, and give you a chart link to act fast.
+              why it’s interesting, and give you a chart link so you can act fast.
             </p>
 
             <dl class="how-facts">
@@ -216,23 +240,38 @@
                 <dd>Short, scannable messages with key stats</dd>
               </div>
               <div>
-                <dt>Cool-down</dt>
+                <dt>Cooldown</dt>
                 <dd>Per-pair safety timers to avoid spam</dd>
               </div>
               <div>
                 <dt>Noise filter</dt>
-                <dd>Rules on liquidity, volume, wicks &amp; score</dd>
+                <dd>Rules on liquidity, volume, score and bad wicks</dd>
               </div>
             </dl>
 
             <div class="how-actions">
-              <a href="#pricing" class="btn btn-ghost">Join Free channel</a>
-              <a href="#pricing" class="btn btn-primary">Upgrade to PRO</a>
+              <!-- How: Free channel link -->
+              <a
+                href="https://t.me/flowscope_alerts"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-ghost"
+              >
+                Join Free channel
+              </a>
+              <!-- How: PRO via bot -->
+              <a
+                href="https://t.me/FlowScopeAlertsBot"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+              >
+                Upgrade to PRO
+              </a>
             </div>
 
             <p class="how-note">
-              You keep your own trading style. FlowScope just does the boring scanning and
-              filtering work for you.
+              You keep your own trading style. FlowScope just does the scanning and filtering for you.
             </p>
           </aside>
         </div>
@@ -246,8 +285,8 @@
           <p class="pricing-eyebrow">Free vs PRO</p>
           <h2>Start free. Upgrade only when it earns its spot.</h2>
           <p>
-            Test the Free feed first. When you want faster entries, more detail and a private
-            channel, switch to PRO – same bot, different level of access.
+            Start with Free alerts. When you want more detail, faster entries and a private channel,
+            you can move to PRO – same bot, more data.
           </p>
         </header>
 
@@ -265,16 +304,22 @@
             <h3 class="plan-title">FlowScope Free</h3>
 
             <ul class="plan-list">
-              <li>Hand-picked free Solana signals</li>
-              <li>Core stats: volume, liquidity, 1h change</li>
-              <li>Filtered for low-liquidity &amp; strange wicks</li>
+              <li>Hand-picked free signals</li>
+              <li>Basic stats: volume, liquidity, 1h change</li>
+              <li>Filtered for low-liquidity &amp; weird wicks</li>
               <li>Light delay compared to the PRO feed</li>
               <li>Perfect to taste the feed before paying</li>
             </ul>
 
-            <button class="btn btn-outline plan-cta">
+            <!-- Free plan CTA → free channel -->
+            <a
+              href="https://t.me/flowscope_alerts"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline plan-cta"
+            >
               Join Free channel
-            </button>
+            </a>
           </article>
 
           <!-- PRO plan -->
@@ -292,65 +337,71 @@
             <h3 class="plan-title">FlowScope PRO</h3>
 
             <ul class="plan-list">
-              <li>Everything in Free, plus more data</li>
-              <li>Extra metrics: buys / sells, FDV, age, score tiers</li>
-              <li>Faster signals than the Free feed</li>
+              <li>Everything in Free, plus extra data</li>
+              <li>Extra metrics: buys/sells, FDV, age, score tiers</li>
+              <li>Faster alerts than the Free feed</li>
               <li>Private PRO Telegram channel</li>
-              <li>Files for Free &amp; PRO per scan (<code>alerts_free.txt</code>, <code>alerts_pro.txt</code>)</li>
-              <li>Tighter filters to cut junk and low-quality moves</li>
+              <li>Files per scan (<code>alerts_free.txt</code>, <code>alerts_pro.txt</code>)</li>
+              <li>Tuned filters to reduce junk</li>
             </ul>
 
-            <button class="btn btn-primary plan-cta">
+            <!-- PRO plan CTA → bot (upgrade/waitlist) -->
+            <a
+              href="https://t.me/FlowScopeAlertsBot"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary plan-cta"
+            >
               Upgrade to PRO
-            </button>
+            </a>
           </article>
         </div>
 
+        <!-- Comparison cards under the plans -->
         <div class="pricing-compare">
-  <!-- Best for -->
-  <div class="pricing-compare-card">
-    <h4>Best for</h4>
-    <div class="pricing-compare-row">
-      <span class="pill-mini pill-mini-free">Free</span>
-      <span class="compare-text">First-time users</span>
-    </div>
-    <div class="pricing-compare-row">
-      <span class="pill-mini pill-mini-pro">PRO</span>
-      <span class="compare-text">Active degen / DEX traders</span>
-    </div>
-  </div>
+          <!-- Best for -->
+          <div class="pricing-compare-card">
+            <h4>Best for</h4>
+            <div class="pricing-compare-row">
+              <span class="pill-mini pill-mini-free">Free</span>
+              <span class="compare-text">First-time users</span>
+            </div>
+            <div class="pricing-compare-row">
+              <span class="pill-mini pill-mini-pro">PRO</span>
+              <span class="compare-text">Active degen / DEX traders</span>
+            </div>
+          </div>
 
-  <!-- Speed -->
-  <div class="pricing-compare-card">
-    <h4>Speed</h4>
-    <div class="pricing-compare-row">
-      <span class="pill-mini pill-mini-free">Free</span>
-      <span class="compare-text">Slight delay vs PRO</span>
-    </div>
-    <div class="pricing-compare-row">
-      <span class="pill-mini pill-mini-pro">PRO</span>
-      <span class="compare-text">Priority signals</span>
-    </div>
-  </div>
+          <!-- Speed -->
+          <div class="pricing-compare-card">
+            <h4>Speed</h4>
+            <div class="pricing-compare-row">
+              <span class="pill-mini pill-mini-free">Free</span>
+              <span class="compare-text">Slight delay vs PRO</span>
+            </div>
+            <div class="pricing-compare-row">
+              <span class="pill-mini pill-mini-pro">PRO</span>
+              <span class="compare-text">Priority alerts</span>
+            </div>
+          </div>
 
-  <!-- Detail -->
-  <div class="pricing-compare-card">
-    <h4>Detail</h4>
-    <div class="pricing-compare-row">
-      <span class="pill-mini pill-mini-free">Free</span>
-      <span class="compare-text">Quick summary</span>
-    </div>
-    <div class="pricing-compare-row">
-      <span class="pill-mini pill-mini-pro">PRO</span>
-      <span class="compare-text">Full breakdown &amp; context</span>
-    </div>
-  </div>
- </div>
-
+          <!-- Detail -->
+          <div class="pricing-compare-card">
+            <h4>Detail</h4>
+            <div class="pricing-compare-row">
+              <span class="pill-mini pill-mini-free">Free</span>
+              <span class="compare-text">Quick summary</span>
+            </div>
+            <div class="pricing-compare-row">
+              <span class="pill-mini pill-mini-pro">PRO</span>
+              <span class="compare-text">Full breakdown &amp; context</span>
+            </div>
+          </div>
+        </div>
 
         <p class="pricing-footnote">
           All payments are crypto-only on Solana. FlowScope never gives financial advice –
-          signals are just structured on-chain data. You always stay responsible for your own trades.
+          signals are just structured on-chain data. You are always responsible for your own trades.
         </p>
       </div>
     </section>
@@ -362,8 +413,8 @@
           <p class="section-eyebrow">Key features</p>
           <h2>Built for people who live on DEXs</h2>
           <p>
-            FlowScope keeps the setup simple: no dashboards, no over-engineering – just on-chain
-            data turned into readable Telegram signals.
+            FlowScope keeps things simple: no dashboards, no over-engineering – just on-chain data turned
+            into readable Telegram alerts.
           </p>
         </header>
 
@@ -371,7 +422,7 @@
           <article class="feature-card">
             <h3>DEX-first scanner</h3>
             <p>
-              Built around DEX activity – volume spikes, pairs, liquidity and token age, not only price candles.
+              Built around DEX activity – volume spikes, pairs, liquidity and token age, instead of just price candles.
             </p>
           </article>
 
@@ -379,36 +430,36 @@
             <h3>Smart scoring</h3>
             <p>
               Each token gets a 0–100 score based on liquidity, 1h vs 24h volume and buy pressure,
-              so you can quickly see if it’s worth a look.
+              so you can quickly see if it’s interesting.
             </p>
           </article>
 
           <article class="feature-card">
             <h3>Clean signal format</h3>
             <p>
-              Signals are designed to be readable in one glance: pair, score, volumes, liquidity,
-              buy / sell ratio and direct chart links.
+              Signals are designed to be readable in one glance: volumes, liquidity, score, buy/sell ratio
+              and direct chart links.
             </p>
           </article>
 
           <article class="feature-card">
             <h3>Cooldown &amp; filters</h3>
             <p>
-              A token won’t spam the feed. Cooldowns and quality gates help keep your Telegram usable and focused.
+              A token won’t spam the feed. Cooldowns and quality gates keep your Telegram clean and usable.
             </p>
           </article>
 
           <article class="feature-card">
             <h3>Free &amp; PRO channels</h3>
             <p>
-              Free channel for curated highlights. PRO channel for deeper, faster, higher-detail flow.
+              Free channel for curated highlights, PRO channel for deeper, faster, higher-detail flow.
             </p>
           </article>
 
           <article class="feature-card">
             <h3>Simple setup</h3>
             <p>
-              The bot runs on your own server. Plug in your env vars, connect Telegram and let FlowScope stream signals.
+              The bot runs on your own server. Plug in env vars, connect Telegram and let FlowScope stream alerts automatically.
             </p>
           </article>
         </div>
@@ -416,8 +467,8 @@
         <div class="why-not-signals">
           <h3>Why not classic “signals”?</h3>
           <p>
-            FlowScope is not a pump group and not a copy-trade service. It doesn’t tell you what to buy.
-            It just turns on-chain noise into structured information so you can decide faster – with your own strategy.
+            FlowScope is not a pump group and not copy-trading. It doesn’t tell you what to buy –
+            it just turns on-chain noise into structured information so you can make your own calls faster.
           </p>
         </div>
       </div>
@@ -436,7 +487,7 @@
           <article class="faq-item">
             <h3>Is FlowScope giving financial advice?</h3>
             <p>
-              No. FlowScope formats on-chain data (volume, liquidity, buy pressure, etc.) into readable signals.
+              No. FlowScope formats on-chain data (volume, liquidity, buy pressure, etc.) into readable alerts.
               You always stay responsible for your own trades.
             </p>
           </article>
@@ -444,15 +495,14 @@
           <article class="faq-item">
             <h3>Which chains are supported?</h3>
             <p>
-              Right now FlowScope focuses on Solana DEX pairs. Other chains can be added later if the data
-              and volume are good enough.
+              For now the bot focuses on Solana DEX pairs. More chains can be added later, but Solana is the main playground.
             </p>
           </article>
 
           <article class="faq-item">
             <h3>What is the difference between Free and PRO?</h3>
             <p>
-              Free shows selected signals with shorter summaries. PRO gets more metrics, faster signals
+              Free shows selected signals with shorter summaries. PRO gets more metrics, faster alerts
               and access to a private PRO Telegram channel.
             </p>
           </article>
@@ -460,8 +510,8 @@
           <article class="faq-item">
             <h3>How often are signals posted?</h3>
             <p>
-              The scanner runs continuously and only posts when filters are passed. Some hours can be quiet,
-              others more active – it all depends on the market.
+              The scanner runs continuously and only posts when filters are passed. Some hours will be quiet,
+              others more active – it depends on the market.
             </p>
           </article>
         </div>
