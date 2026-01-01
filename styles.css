@@ -395,6 +395,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 14px;
+  z-index: 2;
 }
 
 .hero-card-title h2 {
@@ -408,6 +409,47 @@ body {
   font-size: 0.72rem;
   color: var(--muted);
 }
+
+.signal-chart {
+  position: relative;
+  margin: 6px 0 8px;
+  z-index: 1;
+}
+
+
+.signal-chart svg {
+  display: block;
+  width: 100%;
+  height: 64px;
+}
+
+.chart-line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+  stroke-dasharray: none;
+}
+
+
+.chart-line-a {
+  stroke: rgba(217, 70, 239, 0.85);
+  filter: drop-shadow(0 0 10px rgba(217, 70, 239, 0.45));
+}
+
+
+.chart-line-b {
+  stroke: rgba(56, 189, 248, 0.8);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.45));
+}
+
+
+.chart-line-c {
+  stroke: rgba(74, 222, 128, 0.7);
+  filter: drop-shadow(0 0 8px rgba(74, 222, 128, 0.4));
+}
+
+
 
 .pill {
   border-radius: var(--radius-full);
@@ -507,6 +549,7 @@ body {
   align-items: center;
   gap: 6px;
 }
+
 
 .alert-pair {
   font-size: 0.86rem;
@@ -609,6 +652,8 @@ body {
     opacity: 1;
   }
 }
+
+
 
 /* ================= How It Works ================= */
 
@@ -1022,6 +1067,7 @@ body {
   .how-aside::before,
   .how-stream-glow,
   .how-stream-dots span,
+  .chart-line,
   .features-grid::before,
   .features-grid::after,
   .feature-card::after,
