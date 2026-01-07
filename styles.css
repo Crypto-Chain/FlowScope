@@ -38,6 +38,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -50,6 +52,12 @@ body {
   background: radial-gradient(circle at top, #020617 0, #000 70%);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ================= Layout ================= */
@@ -749,6 +757,7 @@ body {
   gap: 26px;
   align-items: flex-start;
   position: relative;
+  overflow: visible;
 }
 
 .how-grid::before,
@@ -901,6 +910,8 @@ body {
   border: 1px solid var(--border);
   padding: 18px 18px 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.65);
+  height: auto;
+  max-height: none;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -996,6 +1007,14 @@ body {
 .coin-tertiary svg {
   width: 40px;
   height: 40px;
+}
+
+.coin,
+.coin-primary,
+.coin-secondary,
+.coin-tertiary,
+.coin-glow {
+  animation: none !important;
 }
 
 @keyframes gridDrift {
@@ -2107,7 +2126,3 @@ body {
     top: -0.4rem;
   }
 }
-
-
-
-
