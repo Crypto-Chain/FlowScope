@@ -40,6 +40,25 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="ambient-bg" aria-hidden="true">
+    <span class="glow-blob blob-a"></span>
+    <span class="glow-blob blob-b"></span>
+    <span class="glow-blob blob-c"></span>
+    <span class="sticker-ring ring-a"></span>
+    <span class="sticker-ring ring-b"></span>
+    <span class="particle particle-1"></span>
+    <span class="particle particle-2"></span>
+    <span class="particle particle-3"></span>
+    <span class="particle particle-4"></span>
+    <span class="particle particle-5"></span>
+    <span class="particle particle-6"></span>
+    <span class="particle particle-7"></span>
+    <span class="particle particle-8"></span>
+    <span class="particle particle-9"></span>
+    <span class="particle particle-10"></span>
+    <span class="particle particle-11"></span>
+    <span class="particle particle-12"></span>
+  </div>
     <!-- ================= Header ================= -->
   <header class="site-header">
     <div class="container nav">
@@ -54,30 +73,29 @@
       </a>
 
       <nav class="nav-links">
-        <a href="#how-it-works">How it works</a>
-        <a href="#pricing">Free vs PRO</a>
-        <a href="#features">Features</a>
+        <a href="#why">Why it works</a>
+        <a href="#how">How it works</a>
         <a href="#faq">FAQ</a>
+        <a href="#proof">Proof</a>
       </nav>
 
       <div class="nav-actions">
         <!-- NAV: Free button - free channel -->
         <a
-          href="https://t.me/flowscope_alerts"
+          href="https://t.me/FlowScopeStats"
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn-ghost"
         >
-          Free Alerts
+          Live Stats
         </a>
-        <!-- NAV: PRO button - bot -->
         <a
-          href="https://t.me/FlowScopeAlertsBot?start=upgrade"
+          href="https://t.me/FlowScopeAlertsBot"
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn-primary"
         >
-          Unlock PRO
+          Start FREE
         </a>
       </div>
 
@@ -91,547 +109,203 @@
     <!-- ================= Hero ================= -->
     <section class="hero">
       <div class="container hero-grid">
-        <!-- Hero left -->
         <div class="hero-copy">
-          <p class="eyebrow">24/7 Solana DEX flow - Free previews, PRO gets the heads-up</p>
           <h1>
-            Track Solana flow before it trends.
+            PRO sees it earlier.
             <br />
-            <span class="accent">FREE gets the recap. PRO gets the heads-up.</span>
+            <span class="accent">FREE sees it later.</span>
           </h1>
           <p class="hero-subtitle">
-            FlowScope watches Solana DEX activity and turns it into clean Telegram posts - so you can spot what's moving without staring at charts.
+            Solana on-chain timing. No hype. Just earlier visibility.
           </p>
-         <ul class="hero-list">
-            <li>PRO posts first</li>
-            <li>FREE posts later (preview)</li>
-            <li>Non-custodial SOL payments (no private keys)</li>
-          </ul>
           <div class="hero-cta">
-          <a
-            href="https://t.me/FlowScopeAlertsBot?start=upgrade"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary"
-          >
-            Unlock early alerts
-          </a>
-
-          <a
-            href="https://t.me/flowscope_alerts"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-secondary"
-          >
-            See what FREE misses
-          </a>
-        </div>
-        <a class="hero-compare" href="#pricing">Compare Free vs PRO</a>
-          <p class="hero-footnote">
-            No financial advice - just on-chain context.
-          </p>
-        </div>
-
-        <!-- Hero right -->
-        <div class="hero-card">
-          <div class="hero-card-header">
-            <div class="hero-card-title">
-              <h2>Live feed preview</h2>
-              <span class="hero-card-label">Preview</span>
+            <a
+              href="https://t.me/FlowScopeAlertsBot"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              Start FREE (Telegram Bot)
+            </a>
+            <a
+              href="https://t.me/FlowScopeStats"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              Live Stats
+            </a>
+          </div>
+          <div class="live-strip" aria-label="Live stats">
+            <div class="live-badge">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span>LIVE</span>
             </div>
-            <span class="pill pill-live">
-              <span class="pill-dot"></span>
-              Scanner online
-            </span>
+            <div class="ticker" role="marquee" aria-live="off">
+              <div class="ticker-track">
+                <span class="ticker-item">Alerts today: 186</span>
+                <span class="ticker-sep">•</span>
+                <span class="ticker-item">PRO head start: ~12m</span>
+                <span class="ticker-sep">•</span>
+                <span class="ticker-item">Peak moves tracked</span>
+                <span class="ticker-sep">•</span>
+                <a class="ticker-item" href="https://t.me/FlowScopeStats" target="_blank" rel="noopener noreferrer">Recaps: @FlowScopeStats</a>
+                <span class="ticker-sep">•</span>
+                <a class="ticker-item" href="https://t.me/flowscope_alerts" target="_blank" rel="noopener noreferrer">Free channel</a>
+                <span class="ticker-sep">•</span>
+                <a class="ticker-item" href="https://t.me/FlowScopeAlertsBot" target="_blank" rel="noopener noreferrer">Bot</a>
+                <span class="ticker-sep">•</span>
+                <span class="ticker-item">Alerts today: 186</span>
+                <span class="ticker-sep">•</span>
+                <span class="ticker-item">PRO head start: ~12m</span>
+                <span class="ticker-sep">•</span>
+                <span class="ticker-item">Peak moves tracked</span>
+                <span class="ticker-sep">•</span>
+                <a class="ticker-item" href="https://t.me/FlowScopeStats" target="_blank" rel="noopener noreferrer">Recaps: @FlowScopeStats</a>
+                <span class="ticker-sep">•</span>
+                <a class="ticker-item" href="https://t.me/flowscope_alerts" target="_blank" rel="noopener noreferrer">Free channel</a>
+                <span class="ticker-sep">•</span>
+                <a class="ticker-item" href="https://t.me/FlowScopeAlertsBot" target="_blank" rel="noopener noreferrer">Bot</a>
+              </div>
+            </div>
           </div>
-          <div class="hero-alert-list">
-            <article class="alert-row">
-              <div class="alert-main">
-                <div class="alert-title">
-                  <span class="alert-pair">$NOVA / SOL</span>
-                  <span class="alert-badge pro">PRO</span>
-                </div>
-                <p class="alert-meta">
-                  Score 88/100 - Buy pressure 71%
-                </p>
-              </div>
-              <div class="alert-side">
-                <span class="alert-pill">Strong</span>
-                <span class="alert-time">1h ago</span>
-              </div>
-            </article>
-
-            <article class="alert-row">
-              <div class="alert-main">
-                <div class="alert-title">
-                  <span class="alert-pair">$WAVE / SOL</span>
-                  <span class="alert-badge free">FREE</span>
-                </div>
-                <p class="alert-meta">
-                  Score 76/100 - Buy pressure 64%
-                </p>
-              </div>
-              <div class="alert-side">
-                <span class="alert-pill">Solid</span>
-                <span class="alert-time">1h ago</span>
-              </div>
-            </article>
-
-            <article class="alert-row muted">
-              <div class="alert-main">
-                <div class="alert-title">
-                  <span class="alert-pair">$RISK / SOL</span>
-                  <span class="alert-badge watch">FILTERED</span>
-                </div>
-                <p class="alert-meta">
-                  Low score - failed filters (liquidity &amp; wicks). Not sent to channels.
-                </p>
-              </div>
-              <div class="alert-side">
-                <span class="alert-pill">Blocked</span>
-                <span class="alert-time">-</span>
-              </div>
-            </article>
+          <div class="hero-liveproof">
+            <span>Live proof</span>
+            <div class="hero-proof-pills">
+              <a href="https://t.me/FlowScopeStats" target="_blank" rel="noopener noreferrer" class="proof-pill">@FlowScopeStats</a>
+              <a href="https://t.me/flowscope_alerts" target="_blank" rel="noopener noreferrer" class="proof-pill">@flowscope_alerts</a>
+              <a href="https://t.me/FlowScopeAlertsBot" target="_blank" rel="noopener noreferrer" class="proof-pill">@FlowScopeAlertsBot</a>
+            </div>
           </div>
-          <p class="hero-footnote">
-            Not financial advice. Just on-chain context so you can decide.
-          </p>
         </div>
       </div>
     </section>
 
-    <!-- ================= Recent PRO Wins ================= -->
-    <section class="section recent-wins">
+    <!-- ================= Why it works ================= -->
+    <section id="why" class="section why-section">
       <div class="container">
-        <header class="section-header reveal" data-delay="0">
-          <p class="section-eyebrow">Recent PRO wins</p>
-          <h2>Proof snapshots (educational)</h2>
-          <p>Examples of timing advantage - wins only. Not financial advice.</p>
-        </header>
-
-        <div class="wins-grid reveal" data-delay="120">
-          <article class="win-card">
-            <h3>$SS</h3>
-            <p class="win-result">TP +28% - 26m</p>
-            <p class="win-note">PRO earlier - Free later</p>
-          </article>
-          <article class="win-card">
-            <h3>$ABC</h3>
-            <p class="win-result">+42% - 2h</p>
-            <p class="win-note">PRO earlier - Free later</p>
-          </article>
-          <article class="win-card">
-            <h3>$XYZ</h3>
-            <p class="win-result">+31% - 48m</p>
-            <p class="win-note">PRO earlier - Free later</p>
-          </article>
+        <div class="section-header">
+          <span class="section-eyebrow">Why it works</span>
+          <h2>Why it works</h2>
+          <p>Crypto-native signal flow without the noise.</p>
         </div>
-
-        <div class="wins-cta reveal" data-delay="200">
-          <a
-            href="https://t.me/FlowScopeAlertsBot?start=upgrade"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary"
-          >
-            Unlock PRO
-          </a>
-          <a
-            href="https://t.me/flowscope_alerts"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-secondary"
-          >
-            Free Alerts
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= How It Works ================= -->
-    <section id="how-it-works" class="section section-alt">
-      <div class="container how-layout">
-        <header class="section-header how-header reveal" data-delay="0">
-          <p class="section-eyebrow">How FlowScope works</p>
-          <h2>From DexScreener noise to clean posts</h2>
-          <p>
-            FlowScope scans fresh Solana pairs 24/7, filters out junk, and turns the loud on-chain feed
-            into a small set of clean posts.
-          </p>
-        </header>
-
-        <div class="how-grid">
-          <div class="how-steps">
-            <article class="step-card reveal reveal-left" data-delay="120">
-              <div class="step-icon">1</div>
-              <h3>Scan &amp; collect</h3>
-              <p>
-                FlowScope pulls live data from DexScreener's token feeds and focuses on fresh Solana pairs only.
-              </p>
-              <ul>
-                <li>New pairs and trending boosts</li>
-                <li>Solana-only focus for now</li>
-                <li>Volume and liquidity snapshots</li>
-              </ul>
-            </article>
-
-            <article class="step-card reveal reveal-left" data-delay="220">
-              <div class="step-icon">2</div>
-              <h3>Filter &amp; score</h3>
-              <p>
-                Each pair gets a score based on volume, liquidity and buy pressure.
-                Weak setups drop out.
-              </p>
-              <ul>
-                <li>Volume spikes vs 24h average</li>
-                <li>Liquidity floor checks</li>
-                <li>Buy / sell pressure balance</li>
-              </ul>
-            </article>
-
-            <article class="step-card reveal reveal-left" data-delay="320">
-              <div class="step-icon">3</div>
-              <h3>Send Free &amp; PRO alerts</h3>
-              <p>
-                Only the best candidates make it into your Telegram feeds: lighter Free posts
-                and deeper PRO breakdowns.
-              </p>
-              <ul>
-                <li>Free: quick stats + chart link</li>
-                <li>PRO: full breakdown and context</li>
-                <li>Cooldowns to avoid spam repeats</li>
-              </ul>
-            </article>
-          </div>
-
-          <aside class="how-aside reveal reveal-right" data-delay="180">
-            <h3>What you actually get</h3>
-            <p class="how-aside-intro">
-              No dashboards, no terminal. Just Telegram posts that show what moved,
-              why it matters, and a chart link so you can move fast.
-            </p>
-            <div class="coin-cluster" aria-hidden="true">
+        <div class="features-grid">
+          <article class="feature-card reveal" data-delay="0">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M4 12h6l2-6 2 12 2-6h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
-
-            <dl class="how-facts">
-              <div>
-                <dt>Chains</dt>
-                <dd>Solana (more later if they pass quality checks)</dd>
-              </div>
-              <div>
-                <dt>Signal style</dt>
-                <dd>Short, scannable posts with key stats</dd>
-              </div>
-              <div>
-                <dt>Cooldown</dt>
-                <dd>Per-pair safety timers to avoid spam</dd>
-              </div>
-              <div>
-                <dt>Noise filter</dt>
-                <dd>Rules on liquidity, volume, score and bad wicks</dd>
-              </div>
-            </dl>
-
-            <div class="how-actions">
-              <!-- How: Free channel link -->
-              <a
-                href="https://t.me/flowscope_alerts"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-ghost"
-              >
-                Free Alerts
-              </a>
-              <!-- How: PRO via bot -->
-              <a
-                href="https://t.me/FlowScopeAlertsBot?start=upgrade"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-primary"
-              >
-                Unlock PRO
-              </a>
-            </div>
-
-            <p class="how-note">
-              You keep your own trading style. FlowScope handles the scanning and filtering.
-            </p>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= Pricing: Free vs PRO ================= -->
-<section id="pricing" class="pricing">
-  <div class="container pricing-inner">
-        <header class="pricing-header reveal" data-delay="0">
-          <p class="eyebrow">Free vs PRO - Paid in SOL</p>
-          <h2>Start free. Upgrade only when the feed earns your trust.</h2>
-          <p class="pricing-subtitle">
-        Same scanner. PRO gets earlier alerts, deeper metrics, and stronger filters.
-          </p>
-        </header>
-
-    <div class="plans-row reveal" data-delay="140">
-      <!-- FREE PLAN -->
-      <article class="plan-card plan-free">
-        <div class="plan-top">
-          <span class="plan-pill plan-pill-free">FREE</span>
-          <div class="plan-price-wrap">
-            <span class="plan-price">$0</span>
-            <span class="plan-tagline">No payment, just join</span>
-          </div>
-        </div>
-
-        <h3 class="plan-title">FlowScope Free <span class="plan-badge plan-badge-free">⏱ delayed</span></h3>
-
-        <ul class="plan-list">
-          <li>Delayed preview</li>
-          <li>More noise</li>
-          <li>Great for learning</li>
-        </ul>
-
-        <a
-          href="https://t.me/flowscope_alerts"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-ghost plan-cta"
-        >
-          See what FREE misses
-        </a>
-      </article>
-
-      <!-- PRO PLAN -->
-      <article class="plan-card plan-pro">
-        <div class="plan-top">
-          <span class="plan-pill plan-pill-pro">PRO</span>
-          <div class="plan-price-wrap">
-            <span class="plan-price">0.9 SOL / month</span>
-            <span class="plan-tagline">Most popular</span>
-          </div>
-        </div>
-
-        <h3 class="plan-title">FlowScope PRO <span class="plan-badge plan-badge-pro">⚡ early</span></h3>
-
-        <ul class="plan-list">
-          <li>Earlier alerts</li>
-          <li>Cleaner setups</li>
-          <li>Full breakdowns</li>
-        </ul>
-
-        <div class="plan-options">
-          <p class="plan-option-title">Early Adopter Lifetime - 3 SOL</p>
-          <p class="plan-option-note">One-time payment. Limited.</p>
-          <a
-            href="https://t.me/FlowScopeAlertsBot?start=upgrade"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary plan-cta"
-          >
-            Unlock early alerts
-          </a>
-          <a
-            href="https://t.me/flowscope_alerts"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-secondary plan-cta plan-cta-secondary"
-          >
-            See what FREE misses
-          </a>
-        </div>
-        <p class="plan-note">
-          Payments are non-custodial. You pay from your own wallet - no private keys stored.
-        </p>
-      </article>
-    </div>
-
-    <p class="pricing-trust">No paid promos. Real updates. Educational only.</p>
-
-    <div class="pricing-compare reveal" data-delay="260">
-      <div class="pricing-compare-head">
-        <p class="compare-eyebrow">Solana scanner</p>
-        <h3>What FlowScope is watching behind the scenes</h3>
-        <p class="compare-kicker">
-          Snapshot-style overview. Numbers are illustrative, but match how the engine behaves in live markets.
-        </p>
-
-        <div class="scanner-beam">
-          <span class="scanner-beam-fill"></span>
-        </div>
-
-        <div class="scanner-orb">SOL</div>
-      </div>
-
-      <div class="pricing-compare-layout">
-        <article class="compare-plan">
-          <h4>Fresh Solana tokens</h4>
-          <p class="compare-stat-main">~2,400+</p>
-          <p class="compare-stat-sub">
-            New and trending Solana DEX pairs the scanner looks at each day.
-          </p>
-        </article>
-
-        <article class="compare-plan">
-          <h4>Filtered out as junk</h4>
-          <p class="compare-stat-main">Approx. 85%</p>
-          <p class="compare-stat-sub">
-            Ruggy, illiquid or overextended moves that fail FlowScope's filters.
-          </p>
-        </article>
-
-        <article class="compare-plan">
-          <h4>Signals that survive</h4>
-          <p class="compare-stat-main">Top 10-15%</p>
-          <p class="compare-stat-sub">
-            Pairs that pass liquidity, volume and buy-pressure checks and can reach the feed.
-          </p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <!-- ================= Key Features ================= -->
-    <section id="features" class="section">
-      <div class="container">
-        <header class="section-header reveal" data-delay="0">
-          <p class="section-eyebrow">Key features</p>
-          <h2>Built for people who live on DEXs</h2>
-          <p>
-            FlowScope keeps things simple: no dashboards, no extra tools - just on-chain data turned
-            into readable Telegram posts.
-          </p>
-        </header>
-
-        <div class="features-grid reveal" data-delay="120">
-          <article class="feature-card reveal" data-delay="180">
-            <h3>DEX-first scanner</h3>
-            <p>
-              Built around DEX activity - volume spikes, pairs, liquidity and token age, instead of just price candles.
-            </p>
+            <h3>Earlier visibility</h3>
+            <p>PRO posts first. FREE is delayed on purpose.</p>
           </article>
-
+          <article class="feature-card reveal" data-delay="120">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M5 12h14M9 8h6M7 16h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Cleaner context</h3>
+            <p>Less noise. More signal context per alert.</p>
+          </article>
           <article class="feature-card reveal" data-delay="240">
-            <h3>Simple scoring</h3>
-            <p>
-              Each token gets a 0-100 score based on liquidity, 1h vs 24h volume and buy pressure,
-              so you can quickly see if it's interesting.
-            </p>
-          </article>
-
-          <article class="feature-card reveal" data-delay="300">
-            <h3>Clean post format</h3>
-            <p>
-              Signals are designed to be readable in one glance: volumes, liquidity, score, buy/sell ratio
-              and direct chart links.
-            </p>
-          </article>
-
-          <article class="feature-card reveal" data-delay="360">
-            <h3>Cooldown &amp; filters</h3>
-            <p>
-              A token won't spam the feed. Cooldowns and quality gates keep your Telegram clean and usable.
-            </p>
-          </article>
-
-          <article class="feature-card reveal" data-delay="420">
-            <h3>Free &amp; PRO channels</h3>
-            <p>
-              Free channel for curated highlights, PRO channel for deeper, faster, higher-detail flow.
-            </p>
-          </article>
-
-          <article class="feature-card reveal" data-delay="480">
-            <h3>Simple setup</h3>
-            <p>
-              The bot runs on your own server. Plug in env vars, connect Telegram and let FlowScope stream alerts.
-            </p>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M6 7h12l-5 6v4l-2 1v-5L6 7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Quality filtering</h3>
+            <p>Stricter filters for PRO. FREE is a preview.</p>
           </article>
         </div>
+      </div>
+    </section>
 
-        <div class="why-not-signals reveal" data-delay="540">
-          <h3>Why not classic signals?</h3>
-          <p>
-            FlowScope is not a pump group and not copy-trading. It doesn't tell you what to buy -
-            it just turns on-chain noise into readable posts so you can make your own calls faster.
-          </p>
+    <!-- ================= How it works ================= -->
+    <section id="how" class="section how-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">How it works</span>
+          <h2>How it works</h2>
+          <p>Three steps, tightly scoped.</p>
+        </div>
+        <div class="how-steps-grid">
+          <article class="step-card reveal" data-delay="0">
+            <div class="step-number">01</div>
+            <h3>Monitor on-chain activity</h3>
+            <p>Track new DEX pairs and flow in real time.</p>
+          </article>
+          <article class="step-card reveal" data-delay="120">
+            <div class="step-number">02</div>
+            <h3>Score + filter the stream</h3>
+            <p>Rank signals and remove low-quality noise.</p>
+          </article>
+          <article class="step-card reveal" data-delay="240">
+            <div class="step-number">03</div>
+            <h3>Deliver PRO first, FREE later</h3>
+            <p>PRO gets the head start. FREE gets the preview.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ================= FAQ ================= -->
-    <section id="faq" class="section section-alt">
+    <section id="faq" class="section faq-section">
       <div class="container">
-        <header class="section-header reveal" data-delay="0">
-          <p class="section-eyebrow">FAQ</p>
-          <h2>Answers before you ape in</h2>
-          <p>Short, honest answers. No hype. No promises.</p>
-        </header>
-
-        <div class="faq-grid reveal" data-delay="120">
-          <article class="faq-item reveal" data-delay="180">
-            <h3>Is FlowScope giving financial advice?</h3>
-            <p>
-              No. FlowScope formats on-chain data (volume, liquidity, buy pressure, etc.) into readable posts.
-              You stay responsible for your own trades.
-            </p>
+        <div class="section-header">
+          <span class="section-eyebrow">FAQ</span>
+          <h2>FAQ</h2>
+          <p>Clear answers. No hype.</p>
+        </div>
+        <div class="faq-grid">
+          <article class="faq-item reveal" data-delay="0">
+            <h3>What’s the FREE delay?</h3>
+            <p>FREE is intentionally delayed by minutes to preserve PRO timing.</p>
           </article>
-
-          <article class="faq-item reveal" data-delay="240">
-            <h3>Which chains are supported?</h3>
-            <p>
-              For now the bot focuses on Solana DEX pairs. More chains can be added later, but Solana is the main focus.
-            </p>
+          <article class="faq-item reveal" data-delay="100">
+            <h3>Is this financial advice?</h3>
+            <p>No. FlowScope is data and alerts only.</p>
           </article>
-
+          <article class="faq-item reveal" data-delay="200">
+            <h3>Do I connect a wallet?</h3>
+            <p>No wallet connection required.</p>
+          </article>
           <article class="faq-item reveal" data-delay="300">
-            <h3>What is the difference between Free and PRO?</h3>
-            <p>
-              Free is a delayed preview with shorter summaries. PRO delivers earlier alerts with deeper
-              metrics, stronger filters, and access to a private PRO channel - so you see it sooner.
-            </p>
+            <h3>Why PRO vs FREE?</h3>
+            <p>PRO is earlier and more filtered. FREE is a delayed preview.</p>
           </article>
+          <article class="faq-item reveal" data-delay="400">
+            <h3>Where can I verify performance?</h3>
+            <p>Check the public stats channel for real posts and timing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="faq-item reveal" data-delay="360">
-            <h3>How often are signals posted?</h3>
-            <p>
-              The scanner runs 24/7 and only posts when filters are passed. Some hours will be quiet,
-              others more active - it depends on the market.
-            </p>
-          </article>
+    <!-- ================= Proof ================= -->
+    <section id="proof" class="section proof-strip">
+      <div class="container proof-inner">
+        <div class="proof-title">
+          <h3>Proof</h3>
+          <p>Real posts. Real timing. No hype.</p>
+        </div>
+        <div class="proof-links">
+          <a class="btn btn-primary" href="https://t.me/FlowScopeStats" target="_blank" rel="noopener noreferrer">Open Stats Channel</a>
+          <a class="btn btn-secondary" href="https://t.me/flowscope_alerts" target="_blank" rel="noopener noreferrer">Open FREE Channel</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ================= Mobile CTA Bar ================= -->
-  <div class="mobile-cta-bar">
-    <a
-      href="https://t.me/FlowScopeAlertsBot?start=upgrade"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="btn btn-primary"
-    >
-      Unlock PRO
-    </a>
-    <a
-      href="https://t.me/flowscope_alerts"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="btn btn-ghost"
-    >
-      Free Alerts
-    </a>
-  </div>
-
   <!-- ================= Footer ================= -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p> <span id="year"></span> FlowScope. All rights reserved.</p>
+      <p><span id="year"></span> FlowScope. All rights reserved.</p>
       <div class="footer-links">
-        <a href="#top">Back to top</a>
-        <a href="#!">Terms</a>
-        <a href="#!">Privacy</a>
+        <a href="https://t.me/FlowScopeAlertsBot" target="_blank" rel="noopener noreferrer">Bot: @FlowScopeAlertsBot</a>
+        <a href="https://t.me/flowscope_alerts" target="_blank" rel="noopener noreferrer">Free Alerts: @flowscope_alerts</a>
+        <a href="https://t.me/FlowScopeStats" target="_blank" rel="noopener noreferrer">Stats: @FlowScopeStats</a>
+        <a href="https://flowscope.app" target="_blank" rel="noopener noreferrer">Website: flowscope.app</a>
       </div>
     </div>
   </footer>
